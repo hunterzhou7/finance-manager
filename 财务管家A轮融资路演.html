@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>财务管家 - A轮融资路演</title>
+<link rel="stylesheet" href=".agents/skills/html-ppt/assets/fonts.css">
+<link rel="stylesheet" href=".agents/skills/html-ppt/assets/base.css">
+<link rel="stylesheet" href=".agents/skills/html-ppt/assets/animations/animations.css">
+<link rel="stylesheet" href=".agents/skills/html-ppt/assets/themes/cyberpunk-neon.css">
+<style>
+:root{
+  --bg:#0a0a0f;
+  --bg-soft:#12121a;
+  --accent:#00f0ff;
+  --accent-2:#ff00aa;
+  --accent-3:#a855f7;
+  --good:#00ff88;
+  --bad:#ff3366;
+  --text-1:#e0e0e0;
+  --text-2:#888899;
+}
+
+.tpl-xhs-post .slide{background:var(--bg)}
+.tpl-xhs-post .h1{font-size:60px;letter-tight:-.03em}
+.tpl-xhs-post .h2{font-size:42px}
+.tpl-xhs-post .lede{font-size:22px}
+
+.cover-slide{text-align:center;padding-top:80px}
+.glow{text-shadow:0 0 10px currentColor,0 0 30px currentColor,0 0 50px currentColor}
+.glow-box{border:1px solid var(--accent);box-shadow:0 0 20px rgba(0,240,255,0.3),inset 0 0 20px rgba(0,240,255,0.05)}
+
+.stat-row{display:flex;justify-content:center;gap:30px;margin-top:50px}
+.stat-card{padding:30px 50px;border-radius:16px;background:rgba(255,255,255,0.03);border:1px solid rgba(0,240,255,0.3);text-align:center}
+.stat-card .val{font-size:48px;font-weight:800;color:var(--accent);text-shadow:0 0 20px var(--accent)}
+.stat-card .lbl{font-size:14px;color:var(--text-2);margin-top:8px}
+
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.pain-card{background:rgba(255,51,102,0.08);border:1px solid rgba(255,51,102,0.3);border-radius:16px;padding:30px 20px;text-align:center}
+.pain-card .icon{font-size:36px;margin-bottom:16px}
+.pain-card .tit{font-size:20px;font-weight:700;margin-bottom:8px}
+.pain-card .txt{font-size:14px;color:var(--text-2);line-height:1.5}
+
+.sol-list{display:flex;flex-direction:column;gap:20px;margin-top:40px}
+.sol-item{display:flex;align-items:center;gap:24px;padding:24px 30px;background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.3);border-radius:12px}
+.sol-item .num{width:50px;height:50px;display:flex;align-items:center;justify-content:center;background:var(--good);color:#000;font-size:24px;font-weight:800;border-radius:50%}
+.sol-item .cont{flex:1}
+.sol-item .tit{font-size:22px;font-weight:700;color:var(--good)}
+.sol-item .txt{font-size:14px;color:var(--text-2);margin-top:4px}
+
+.market-big{text-align:center;padding-top:40px}
+.market-big .num{font-size:100px;font-weight:900;letter-tight:-.04em;background:linear-gradient(135deg,#00f0ff,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.market-big .unit{font-size:28px;color:var(--accent)}
+.market-big .sub{font-size:20px;color:var(--text-2);margin-top:8px}
+
+.market-stat{display:flex;justify-content:center;gap:40px;margin-top:40px}
+.mkt-stat{padding:24px 40px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;text-align:center}
+.mkt-stat .val{font-size:36px;font-weight:700;color:var(--accent-2)}
+.mkt-stat .lbl{font-size:14px;color:var(--text-2);margin-top:4px}
+
+.team-grid{display:flex;justify-content:center;gap:50px;margin-top:40px}
+.team-card{text-align:center;padding:30px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:16px;width:180px}
+.team-card .avt{font-size:48px;margin-bottom:16px}
+.team-card .name{font-size:20px;font-weight:700;margin-bottom:4px}
+.team-card .role{font-size:14px;color:var(--text-2)}
+
+.cta-slide{text-align:center;padding-top:60px}
+.invest-btn{display:inline-block;padding:20px 60px;font-size:24px;font-weight:700;background:linear-gradient(135deg,#00f0ff,#a855f7);color:#000;border-radius:50px;border:none;cursor:pointer;box-shadow:0 0 30px rgba(0,240,255,0.5)}
+.invest-btn:hover{box-shadow:0 0 50px rgba(0,240,255,0.8)}
+
+.bottom-bar{position:absolute;bottom:20px;left:0;right:0;display:flex;justify-content:space-between;padding:0 40px;font-size:14px;color:var(--text-2)}
+</style>
+</head>
+<body class="tpl-xhs-post">
+<div class="deck">
+
+  <!-- 1. Cover -->
+  <section class="slide cover-slide" data-title="Cover" data-fx="particle-burst">
+    <div style="font-size:16px;letter-spacing:4px;color:var(--accent);text-transform:uppercase">A轮融资路演</div>
+    <h1 class="h1 mt-l glow" style="color:var(--accent)">财务管家</h1>
+    <p class="lede" style="color:var(--text-2);margin-top:12px">让每一笔收支都有迹可循</p>
+    <div class="stat-row" style="margin-top:50px">
+      <div class="stat-card glow-box"><div class="val">3秒</div><div class="lbl">极速记账</div></div>
+      <div class="stat-card glow-box"><div class="val" style="color:var(--good)">100%</div><div class="lbl">数据安全</div></div>
+      <div class="stat-card glow-box"><div class="val" style="color:var(--accent-2)">0</div><div class="lbl">免费使用</div></div>
+    </div>
+    <div class="bottom-bar"><div>融资计划：1000万人民币</div><div>出让10%股份</div></div>
+  </section>
+
+  <!-- 2. Pain Points -->
+  <section class="slide" data-title="Pain">
+    <p class="lede" style="color:var(--bad);font-weight:700;margin-top:40px">PAIN POINTS</p>
+    <h2 class="h2 glow" style="color:var(--bad)">用户痛点</h2>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="icon">💸</div>
+        <div class="tit">85%月光族</div>
+        <div class="txt">工资花光却不知<br>花到哪里去了</div>
+      </div>
+      <div class="pain-card">
+        <div class="icon">🤷</div>
+        <div class="tit">记不住</div>
+        <div class="txt">靠记忆记账<br>完全不靠谱</div>
+      </div>
+      <div class="pain-card">
+        <div class="icon">📱</div>
+        <div class="tit">App太复杂</div>
+        <div class="txt">现有记账软件<br>太难用不想用</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--text-2);margin-top:30px">超过4.5亿潜在用户未被满足</p>
+  </section>
+
+  <!-- 3. Solution -->
+  <section class="slide" data-title="Solution">
+    <p class="lede" style="color:var(--good);font-weight:700;margin-top:40px">SOLUTION</p>
+    <h2 class="h2 glow" style="color:var(--good)">财务管家的力量</h2>
+    <div class="sol-list">
+      <div class="sol-item">
+        <div class="num">1</div>
+        <div class="cont">
+          <div class="tit">3秒极速记账</div>
+          <div class="txt">极简流程，一键完成，就是这么快</div>
+        </div>
+      </div>
+      <div class="sol-item">
+        <div class="num">2</div>
+        <div class="cont">
+          <div class="tit">智能财务报表</div>
+          <div class="txt">收支分类图表，一目了然</div>
+        </div>
+      </div>
+      <div class="sol-item">
+        <div class="num">3</div>
+        <div class="cont">
+          <div class="tit">Excel数据导出</div>
+          <div class="txt">随时导出，数据掌控在自己手中</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Market -->
+  <section class="slide" data-title="Market">
+    <p class="lede" style="color:var(--accent);font-weight:700;margin-top:40px">MARKET</p>
+    <h2 class="h2 glow">广阔市场</h2>
+    <div class="market-big">
+      <div class="num">500亿<span class="unit">+</span></div>
+      <div class="sub">中国个人财务管理市场规模</div>
+    </div>
+    <div class="market-stat">
+      <div class="mkt-stat">
+        <div class="val" style="color:var(--accent)">4.5亿</div>
+        <div class="lbl">潜在用户</div>
+      </div>
+      <div class="mkt-stat">
+        <div class="val" style="color:var(--good)">68%</div>
+        <div class="lbl">手机渗透率</div>
+      </div>
+      <div class="mkt-stat">
+        <div class="val" style="color:var(--accent-2)">32%</div>
+        <div class="lbl">付费意愿</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--good);margin-top:30px">蓝海市场，等你来占</p>
+  </section>
+
+  <!-- 5. Team & CTA -->
+  <section class="slide" data-title="Team" data-fx="particle-burst">
+    <p class="lede" style="color:var(--accent-2);font-weight:700;margin-top:40px">TEAM</p>
+    <h2 class="h2 glow">创始团队</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avt">👨‍💻</div>
+        <div class="name">CEO</div>
+        <div class="role">产品负责人<br>10年经验</div>
+      </div>
+      <div class="team-card">
+        <div class="avt">👩‍💼</div>
+        <div class="name">CTO</div>
+        <div class="role">技术负责人<br>全栈开发</div>
+      </div>
+    </div>
+    <div style="margin-top:50px">
+      <div class="invest-btn">联系我们：A轮合作</div>
+    </div>
+    <p class="lede" style="color:var(--text-2);margin-top:20px">contact@finance.com | 手机：138-0000-0000</p>
+    <div class="bottom-bar"><div>财务管家</div><div>谢谢观看</div></div>
+  </section>
+
+</div>
+<script src=".agents/skills/html-ppt/assets/runtime.js"></script>
+</body></html>

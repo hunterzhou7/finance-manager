@@ -1,0 +1,15 @@
+{
+  "name": "finance-manager-uniapp-tests",
+  "version": "1.0.0",
+  "description": "财务管家UniApp测试套件",
+  "scripts": {
+    "test": "node tests/test-runner.js",
+    "test:ui": "node tests/test-runner.js --suite=ui",
+    "test:ft": "node tests/test-runner.js --suite=functional",
+    "test:platform": "node tests/test-runner.js --suite=platform",
+    "test:report": "node tests/test-runner.js --report"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.24.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "finance-promo",
+  "version": "1.0.0",
+  "description": "财务管家推广视频",
+  "scripts": {
+    "start": "remotion studio src/Root.tsx",
+    "build": "remotion render src/Root.tsx FinancePromo out/video.mp4",
+    "quiet": "remotion render src/Root.tsx FinancePromo out/video.mp4 --quiet"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/fonts": "^4.0.467",
+    "@remotion/media": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  }
+}

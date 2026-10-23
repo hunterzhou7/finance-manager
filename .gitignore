@@ -1,0 +1,39 @@
+# Node
+node_modules/
+package-lock.json
+.DS_Store
+
+# Java
+target/
+*.class
+*.jar
+*.war
+.idea/
+*.iml
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 周报
+000.文档纪要/
+
+# 环境变量（保留示例文件）
+.env
+.env.*
+!.env.example
+
+# 临时目录
+temp/
+tmp/
+TMP.可删除/
+
+# 第三方开源项目（体积过大，不纳入本项目仓库）
+010.内容运营（自媒体与运营）/ppt-master-main/
+
+# Claude Code 本地设置
+.claude/settings.local.json
