@@ -1,0 +1,3 @@
+# finance-manager
+
+存档初始化中...
